@@ -21,7 +21,7 @@ You shoud now see the Adapter tag when you perform View Source after refreshing 
 
 And you're done!  Your queues and activation rules can now be configured in the Queue-Fair Portal.
 
-## CloudFront Adapter
+## CloudFront Network-Edge Adapter
 Using the CloudFront Adapter means that your CloudFront distribution communicates directly with the Queue-Fair Queue Server Cluster, rather than your visitors' browsers or your origin server.
 
 This can introduce a dependency between our systems, which is why most customers prefer the Client-Side Adapter.  See Section 10 of the Technical Guide for help regarding which integration method is most suitable for you.
