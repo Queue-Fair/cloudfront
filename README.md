@@ -62,7 +62,7 @@ Here's how to add Queue-Fair to your CloudFront distribution. We'll do the Viewe
 
 **12.** In index.js, enter your Account System Name and Account Secret from the Queue-Fair Portal where indicated at the top of the `goQueueFair()` function.  Hit CTRL-S to save, then the white Deploy button as above.
 
-**13.** Scroll up to Function overview, `Add Trigger`, and this time you *MUST* select `Viewer request` as the CloudFront event.  The default `*` Cache behaviour is fine, but again if you have a Cache behaviour that just matches your pages, it's more efficicient.  Sometimes the Deploy to Lambda@Edge dialog appears twice for no apparent reason - if that happens then fill it in again the same, with `Viewer request` as the CloudFront event.
+**13.** Scroll up to Function overview, `Add Trigger`, and this time you *MUST* select `Viewer request` as the CloudFront event.  The default `*` Cache behaviour is fine, but again if you have a Cache behaviour that just matches your pages, it's more efficient.  Sometimes the Deploy to Lambda@Edge dialog appears twice for no apparent reason - if that happens then fill it in again the same, with `Viewer request` as the CloudFront event.
 
 **14.** OPTIONAL You can click the `CloudFront console` link to see the status of your distribution, which will say `Deploying` in the Last modified column.  You can hit the refresh button to find out when it has finished deploying - it will take several minutes.  You can also click on the Distribution ID and go to Behaviours, check the radio button for the Cache Policy you chose (default is `*`), hit Edit and check the Function associations for `Viewer request` and `Viewer response` if you like while you wait.
 
