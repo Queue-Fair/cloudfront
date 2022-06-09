@@ -83,7 +83,7 @@ In a new Private Browsing window, visit the page on your site that matches the A
  - Hit Refresh.  Verify that the cookie(s) have not changed their values.
 
 #### Testing Queue
-Go back to the Portal and put the queue in Demo mode on the Queue Settings page.  Hit Make Live.  Delete any QueueFair-Pass cookies from your browser.  In a new tab, visit https://accountname.queue-fair.net , and delete any QueueFair-Pass or QueueFair-Data cookies that appear there.  Refresh the page that you have visited on your site.
+Go back to the Portal and put the queue in Demo mode on the Queue Settings page.  Hit Make Live.  Close ALL Private Browsing windows and tabs (as they share a cookie space) and open a new one.  Go to the page that matches the Activation Rules on your site.
 
  - Verify that you are now sent to queue.
  - When you come back to the page from the queue, verify that a new `QueueFair-Pass-queuename` cookie has been created.
