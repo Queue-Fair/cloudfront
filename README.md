@@ -38,7 +38,7 @@ These instructions assume you already have a CloudFront distribution with an ori
 
 Here's how to add Queue-Fair to your CloudFront distribution. We'll do the ViewerResponse lambda first.
 
-**1.** Download the latest release of this distribution and unzip it.  Log in to AWS Console and make sure that the region pulldown at the top right of the AWS Console shows N. Virgina - this is the us-east-1 region.  The Lambda@Edge functions must be created in this region.
+**1.** Download the latest release of this distribution and unzip it.  Log in to AWS Console and make sure that the region pulldown at the top right of the AWS Console shows N. Virginia - this is the us-east-1 region.  The Lambda@Edge functions must be created in this region.
 
 **2.** In the search box, start typing "lambda", and select Lambda, then "Create function".
 
