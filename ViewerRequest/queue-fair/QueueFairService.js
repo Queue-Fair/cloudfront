@@ -14,7 +14,7 @@ class QueueFairService {
   isSecure = false;
 
   /**
-   * @param {Object} req an express request
+   * @param {Object} req a CloudFront request
    */
   constructor(req) {
     this.req= req;
