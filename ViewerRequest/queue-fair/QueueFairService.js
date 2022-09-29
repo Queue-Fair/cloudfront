@@ -99,7 +99,7 @@ class QueueFairService {
    * @return {string} the IP address of the visitor
    */
   remoteAddr() {
-    return this.req.clientIP;
+    return this.req.clientIp;
   }
 
   /**
