@@ -66,7 +66,9 @@ Here's how to add Queue-Fair to your CloudFront distribution. We'll do the Viewe
 
 **14.** OPTIONAL You can click the `CloudFront console` link to see the status of your distribution, which will say `Deploying` in the Last modified column.  You can hit the refresh button to find out when it has finished deploying - it will take several minutes.  You can also click on the Distribution ID and go to Behaviours, check the radio button for the Cache Policy you chose (default is `*`), hit Edit and check the Function associations for `Viewer request` and `Viewer response` if you like while you wait.
 
-**15.** Once the `Last modified` value shows a date and time instead of `Deploying`, that's it, you're done!
+**15.** IMPORTANT Unlike the JavaScript Client-Side Adapter, which only runs in browsers that run JavaScript and only on browsers requesting page URLs that contain the Adapter tag, the Cloudfront adapter runs on every request.  That means if you have automated systems that call API or callback URLs on your site (such as payment gateways), and your Activation Rules match those URLs, they will also be queued when things get busy, which can have adverse effects.  We recommend that you exclude API or callback URLs by adding a zero-precedence Behaviour to your distribution with a Path Pattern /path/to/api* with No Association for the Functions.  You can also use Activation rules to exclude specific paths when things get busy.
+
+**16.** Once the `Last modified` value shows a date and time instead of `Deploying`, that's it, you're done!
 
 ### To test the CloudFront Adapter
 
