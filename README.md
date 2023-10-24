@@ -48,7 +48,7 @@ Here's how to add Queue-Fair to your CloudFront distribution. We'll do the Viewe
 
 **5.** A "Deploy to Lambda@Edge" dialog may pop up - if it does, Cancel it.
 
-**6.** Open `ViewerResponse/index.js` from this distribution, and copy-and-paste the content into the "index.js" that you can see open in the Code Source section, completely replacing any content you can see there.  Hit CTRL-S to save, and then the white Deploy button next to the blue Test button.
+**6.** Open `ViewerResponse/index.js` from this distribution, and copy-and-paste the content into the "index.js" that you can see open in the Code Source section, completely replacing any content you can see there.  NOTE: If you have an "index.mjs" file, right click the file name in AWS and rename it to index.js.  Hit CTRL-S to save, and then the white Deploy button next to the blue Test button.
 
 **7.** Scroll up to the `Function overview` section and expand it if necessary.  Select Add Trigger, and start typing "cloudfront".  Select `CloudFront` and then `Deploy to Lambda@Edge`
 
