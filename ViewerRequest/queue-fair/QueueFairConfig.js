@@ -35,6 +35,12 @@ exports.settingsCacheLifetimeMinutes=5;
 // visitor. The recommended value is true.
 exports.stripPassedString=true;
 
+// When enabled the URL of any visitor request that results in an Adapter call to 
+// the Queue Server cluster is sent to the cluster for logging, which is occasionally
+// useful for investigations.  Only applies to SAFE mode.
+// Should be set to false for production systems.
+exports.sendURL=true;
+
 // Whether to send the visitor to the Adapter server for counting (simple mode),
 // or consult the Adapter server (safe mode).The recommended value is "safe".
 exports.adapterMode = 'safe';
