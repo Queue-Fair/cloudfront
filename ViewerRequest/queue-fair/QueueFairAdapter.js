@@ -701,6 +701,11 @@ class QueueFairAdapter {
       url += '&identifier=';
       url += encodeURIComponent(this.processIdentifier(this.userAgent));
 
+      if(this.config.sendURL) {
+        url+= '&url=';
+        url+= encodeURIComponent(this.url);
+      }
+
       if (this.d) this.log('Adapter URL ' + url);
       this.consultingAdapter = true;
       this.loadURL(url, (data) => this.gotAdapterStr(data));
